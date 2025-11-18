@@ -27,6 +27,7 @@ const Index = () => {
   const filterYear = location.state?.filterYear as number | undefined;
 
   const handleFileSelect = async (file: File) => {
+    // Upload de arquivo agora opcional - dados vêm da API
     setIsLoading(true);
     try {
       const parsedTickets = await parseFile(file);
