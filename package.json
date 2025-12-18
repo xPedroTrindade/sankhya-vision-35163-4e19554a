@@ -1,9 +1,12 @@
 {
   "name": "freshboard",
   "private": true,
-  "workspaces": ["frontend", "backend"],
+  "workspaces": [
+    "frontend/sankhya-vision-35163-10370",
+    "backend-api/freshdesk-proxy"
+  ],
   "scripts": {
-    "dev": "concurrently \"npm run dev --prefix frontend\" \"npm run start --prefix backend\""
+    "dev": "concurrently \"npm run dev --prefix frontend/sankhya-vision-35163-10370\" \"npm run start --prefix backend-api/freshdesk-proxy\""
   },
   "devDependencies": {
     "concurrently": "^9.0.0"
