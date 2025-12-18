@@ -1,0 +1,90 @@
+[
+  {
+    "id": 2151,
+    "link_ticket": "https://sankhyaindaiatuba.freshdesk.com/support/tickets/2151",
+    "assunto": "Alteração de Vencimento Inativo em Central de Vendas",
+    "descricao": "A opção de alterar a data de vencimento em central de vendas não está habilitado. Quando emitimos o faturamento avulso precisamos reajustar a data para o cliente, porém não é possível.",
+    "status": 5,
+    "prioridade": 3,
+    "tipo": "Suporte Técnico",
+    "empresa_id": 73001334658,
+    "requester_id": 73068711474,
+    "nome_solicitante": "Cibele",
+    "email_solicitante": "cibele@grupoquik.com.br",
+    "created_at": "2025-10-15T13:24:07Z",
+    "updated_at": "2025-11-12T13:10:16Z",
+    "due_by": "2025-11-12T03:19:09Z",
+    "is_escalated": false,
+    "tags": [],
+    "group_id": null,
+    "modulo": "Vendas",
+    "processo": "Central de Vendas",
+    "personalizacao": null,
+    "custom_fields": {
+      "cf_mdulo": "Vendas",
+      "cf_processo": "Central de Vendas",
+      "cf_processo6582": "Central de Vendas",
+      "cf_personalizao": null
+    }
+  },
+  {
+    "id": 2150,
+    "link_ticket": "https://sankhyaindaiatuba.freshdesk.com/support/tickets/2150",
+    "assunto": "Problema ao Cancelar NFs-e",
+    "descricao": "Ao executar o procedimento padrão para cancelamento de uma NFs-e o processo não é concluído. Anexo segue gravação do procedimento realizado e o retorno em tela.",
+    "status": 4,
+    "prioridade": 3,
+    "tipo": "Suporte Técnico",
+    "empresa_id": 73001334658,
+    "requester_id": 73068682304,
+    "nome_solicitante": "Rafael",
+    "email_solicitante": "rafael@grupoquik.com.br",
+    "created_at": "2025-10-15T12:22:46Z",
+    "updated_at": "2025-10-17T20:17:29Z",
+    "due_by": "2025-10-18T07:01:30Z",
+    "is_escalated": false,
+    "tags": [
+      "pendente clinte"
+    ],
+    "group_id": null,
+    "modulo": "Fiscal",
+    "processo": "Faturamento -> Cancelamento de NFse",
+    "personalizacao": null,
+    "custom_fields": {
+      "cf_mdulo": "Fiscal",
+      "cf_processo": "Faturamento -> Cancelamento de NFse",
+      "cf_processo6582": null,
+      "cf_personalizao": null
+    }
+  },
+  {
+    "id": 2148,
+    "link_ticket": "https://sankhyaindaiatuba.freshdesk.com/support/tickets/2148",
+    "assunto": "Cancelar NF",
+    "descricao": "Estou tentando cancelar uma nova mas sem sucesso.",
+    "status": 5,
+    "prioridade": 3,
+    "tipo": "Suporte Técnico",
+    "empresa_id": 73001334658,
+    "requester_id": 73068682304,
+    "nome_solicitante": "Rafael",
+    "email_solicitante": "rafael@grupoquik.com.br",
+    "created_at": "2025-10-14T13:37:47Z",
+    "updated_at": "2025-10-15T13:39:58Z",
+    "due_by": "2025-10-15T02:38:25Z",
+    "is_escalated": false,
+    "tags": [
+      "Pendente Cliente"
+    ],
+    "group_id": null,
+    "modulo": null,
+    "processo": "Cancelar NF",
+    "personalizacao": null,
+    "custom_fields": {
+      "cf_mdulo": null,
+      "cf_processo": "Cancelar NF",
+      "cf_processo6582": null,
+      "cf_personalizao": null
+    }
+  }
+]

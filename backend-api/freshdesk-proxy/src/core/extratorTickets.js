@@ -7,23 +7,47 @@
  * e mantém ordem decrescente por created_at (mais novo → mais antigo).
  * Também enriquece cada ticket com nome e e-mail do solicitante via /contacts/{id}.
  *
- * Config .env:
- *   FRESHDESK_DOMAIN=sankhyaindaiatuba.freshdesk.com
- *   FRESHDESK_API_KEY=xxxx
- *   FROM_DATE=2025-10-01     # início (ex: mês atual)
- *   TO_DATE_END=2024-01-01   # até onde descer
- *   MAX_MONTHS=36            # segurança
+ * Estrutura esperada:
+ * backend-api/freshdesk-proxy/
+ * └── data/
+ *     ├── cache/
+ *     │   └── requesters_cache.json
+ *     └── raw/
+ *         └── tickets_full.json
  *
  * Uso:
- *   node extratorTickets.js
+ *   node src/core/extratorTickets.js
  ********************************************************************************************/
 
 import fetch from "node-fetch";
 import dotenv from "dotenv";
 import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 
 dotenv.config();
 
+/* ================== RESOLUÇÃO DE PATHS (CRÍTICO) ================== */
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// estamos em src/core → subir dois níveis até freshdesk-proxy
+const PROJECT_ROOT = path.resolve(__dirname, "../../");
+
+// diretórios de dados
+const DATA_DIR = path.join(PROJECT_ROOT, "data");
+const CACHE_DIR = path.join(DATA_DIR, "cache");
+const RAW_DIR = path.join(DATA_DIR, "raw");
+
+// arquivos
+const REQUESTER_CACHE_FILE = path.join(CACHE_DIR, "requesters_cache.json");
+const TICKETS_RAW_FILE = path.join(RAW_DIR, "tickets_full.json");
+
+// garante estrutura
+fs.mkdirSync(CACHE_DIR, { recursive: true });
+fs.mkdirSync(RAW_DIR, { recursive: true });
+
+/* ================== ENV ================== */
 const DOMAIN = process.env.FRESHDESK_DOMAIN;
 const API_KEY = process.env.FRESHDESK_API_KEY;
 const MAX_MONTHS = Number(process.env.MAX_MONTHS || "36");
@@ -33,22 +57,26 @@ if (!DOMAIN || !API_KEY) {
   process.exit(1);
 }
 
+/* ================== HELPERS ================== */
 const authHeader = () => ({
   Authorization: "Basic " + Buffer.from(`${API_KEY}:x`).toString("base64"),
 });
+
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-/* ================== Datas ================== */
+/* ================== DATAS ================== */
 function parseDate(s) {
   const [y, m, d] = s.split("-").map(Number);
   return new Date(Date.UTC(y, m - 1, d));
 }
+
 function fmtDate(d) {
   const y = d.getUTCFullYear();
   const m = String(d.getUTCMonth() + 1).padStart(2, "0");
   const day = String(d.getUTCDate()).padStart(2, "0");
   return `${y}-${m}-${day}`;
 }
+
 function minusOneMonth(dateUTC) {
   const y = dateUTC.getUTCFullYear();
   const m = dateUTC.getUTCMonth();
@@ -57,29 +85,25 @@ function minusOneMonth(dateUTC) {
   return d;
 }
 
-/* ================== Config do range automático ================== */
-const startTop = process.env.FROM_DATE ? parseDate(process.env.FROM_DATE) : parseDate("2025-11-13");
-const stopBottom = process.env.TO_DATE_END ? parseDate(process.env.TO_DATE_END) : parseDate("2023-01-01");
+/* ================== RANGE AUTOMÁTICO ================== */
+const startTop = process.env.FROM_DATE
+  ? parseDate(process.env.FROM_DATE)
+  : parseDate("2025-12-03");
 
-if (!(startTop instanceof Date) || isNaN(startTop)) {
-  console.error("❌ FROM_DATE inválido no .env (use yyyy-mm-dd).");
-  process.exit(1);
-}
-if (!(stopBottom instanceof Date) || isNaN(stopBottom)) {
-  console.error("❌ TO_DATE_END inválido no .env (use yyyy-mm-dd).");
-  process.exit(1);
-}
+const stopBottom = process.env.TO_DATE_END
+  ? parseDate(process.env.TO_DATE_END)
+  : parseDate("2023-01-01");
+
 if (stopBottom >= startTop) {
-  console.error("❌ TO_DATE_END deve ser anterior a FROM_DATE (descendo no tempo).");
+  console.error("❌ TO_DATE_END deve ser anterior a FROM_DATE.");
   process.exit(1);
 }
 
-/* ================== Estado/Cache ================== */
+/* ================== CACHE EM MEMÓRIA ================== */
 let cacheTickets = [];
-const VALID_STATUSES = new Set([2, 3, 4, 5]); // Aberto, Pendente, Resolvido, Fechado
+const VALID_STATUSES = new Set([2, 3, 4, 5]);
 
-/* ================== ENRIQUECIMENTO DE REQUESTER ================== */
-const REQUESTER_CACHE_FILE = "./requesters_cache.json";
+/* ================== REQUESTER CACHE ================== */
 let requesterCache = {};
 
 if (fs.existsSync(REQUESTER_CACHE_FILE)) {
@@ -96,23 +120,34 @@ async function getRequesterInfo(requesterId) {
 
   const url = `https://${DOMAIN}/api/v2/contacts/${requesterId}`;
   const resp = await fetch(url, { headers: authHeader() });
+
   if (!resp.ok) {
     console.warn(`⚠️ Falha ao buscar requester ${requesterId}: ${resp.status}`);
     return null;
   }
+
   const data = await resp.json();
   requesterCache[requesterId] = {
     name: data.name,
     email: data.email,
   };
-  fs.writeFileSync(REQUESTER_CACHE_FILE, JSON.stringify(requesterCache, null, 2));
-  await sleep(150); // delay pequeno para evitar rate limit
+
+  fs.writeFileSync(
+    REQUESTER_CACHE_FILE,
+    JSON.stringify(requesterCache, null, 2),
+    "utf8"
+  );
+
+  await sleep(150);
   return requesterCache[requesterId];
 }
 
-/* ================== UP-SERT COM ENRIQUECIMENTO ================== */
+/* ================== UPSERT ================== */
 async function upsertTickets(incoming) {
-  const filtered = incoming.filter((t) => VALID_STATUSES.has(Number(t.status)));
+  const filtered = incoming.filter((t) =>
+    VALID_STATUSES.has(Number(t.status))
+  );
+
   const byId = new Map(cacheTickets.map((t) => [t.id, t]));
 
   for (const t of filtered) {
@@ -125,29 +160,23 @@ async function upsertTickets(incoming) {
       byId.set(t.id, t);
     }
   }
+
   cacheTickets = Array.from(byId.values());
 }
 
 /* ================== MERGE INCREMENTAL ================== */
 function mergeWithExisting() {
-  const OUTPUT_DIR = "./data/raw";
-  const OUTPUT_FILE = `${OUTPUT_DIR}/tickets_full.json`;
-
-  fs.mkdirSync(OUTPUT_DIR, { recursive: true });
-
   let existing = [];
 
-  if (fs.existsSync(OUTPUT_FILE)) {
+  if (fs.existsSync(TICKETS_RAW_FILE)) {
     try {
-      existing = JSON.parse(fs.readFileSync(OUTPUT_FILE, "utf8"));
-      console.log(`📂 tickets_full.json carregado (${existing.length} registros existentes)`);
+      existing = JSON.parse(fs.readFileSync(TICKETS_RAW_FILE, "utf8"));
+      console.log(`📂 tickets_full.json carregado (${existing.length})`);
     } catch {
       console.warn("⚠️ tickets_full.json inválido — será recriado.");
     }
   }
 
-  const before = existing.length;
-  const incoming = cacheTickets.length;
   const combined = [...existing, ...cacheTickets];
   const seen = new Map();
 
@@ -159,28 +188,29 @@ function mergeWithExisting() {
 
   merged.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
 
-  const duplicatesRemoved = combined.length - merged.length;
-  fs.writeFileSync(OUTPUT_FILE, JSON.stringify(merged, null, 2), "utf8");
+  fs.writeFileSync(
+    TICKETS_RAW_FILE,
+    JSON.stringify(merged, null, 2),
+    "utf8"
+  );
 
-  console.log(`💾 ${OUTPUT_FILE} atualizado.`);
-  console.log(`📊 Estatísticas do merge:`);
-  console.log(`   • Tickets anteriores: ${before}`);
-  console.log(`   • Novos recebidos:   ${incoming}`);
-  console.log(`   • Duplicados remov.: ${duplicatesRemoved}`);
-  console.log(`   • Total final:       ${merged.length}\n`);
-
-  return { totalFinal: merged.length, duplicatesRemoved };
+  return {
+    totalFinal: merged.length,
+    duplicatesRemoved: combined.length - merged.length,
+  };
 }
 
-/* ================== Busca 1 bloco (um mês) ================== */
-async function fetchMonthBlock(upperExclusiveUTC, lowerInclusiveUTC) {
-  const to = fmtDate(lowerInclusiveUTC);
-  const from = fmtDate(upperExclusiveUTC);
-  console.log(`\n🚀 Iniciando extração de ${from} até ${to} (mais recentes primeiro)...`);
+/* ================== FETCH MENSAL ================== */
+async function fetchMonthBlock(upper, lower) {
+  const from = fmtDate(upper);
+  const to = fmtDate(lower);
+
+  console.log(`🚀 Extraindo ${from} → ${to}`);
 
   const rawQuery = `created_at:>'${to}' AND created_at:<'${from}'`;
   const query = encodeURIComponent(rawQuery);
-  let totalFetched = 0;
+
+  let fetched = 0;
 
   for (let page = 1; page <= 10; page++) {
     const url = `https://${DOMAIN}/api/v2/search/tickets?query="${query}"&page=${page}`;
@@ -188,59 +218,50 @@ async function fetchMonthBlock(upperExclusiveUTC, lowerInclusiveUTC) {
 
     if (resp.status === 429) {
       const retry = Number(resp.headers.get("Retry-After") || "2");
-      console.log(`⏳ Rate limit. Aguardando ${retry}s...`);
       await sleep(retry * 1000);
       page--;
       continue;
     }
 
-    if (!resp.ok) {
-      const errText = await resp.text();
-      console.error(`❌ Erro HTTP ${resp.status} na página ${page}: ${errText}`);
-      if (resp.status === 400) console.error(`🔎 Query enviada (raw): ${rawQuery}`);
-      break;
-    }
+    if (!resp.ok) break;
 
     const data = await resp.json();
-    if (data?.results?.length) {
-      await upsertTickets(data.results);
-      totalFetched += data.results.length;
-      console.log(`📄 Página ${page}: ${data.results.length} tickets`);
-    } else {
-      console.log(`🚫 Página ${page} sem resultados — encerrando bloco.`);
-      break;
-    }
+    if (!data?.results?.length) break;
 
+    await upsertTickets(data.results);
+    fetched += data.results.length;
     await sleep(300);
   }
 
   const { totalFinal, duplicatesRemoved } = mergeWithExisting();
-  console.log(`✅ Bloco concluído (+${totalFetched} tickets de ${from} → ${to}).`);
-  console.log(`📊 Total processado: ${totalFetched}, duplicados removidos: ${duplicatesRemoved}, total final: ${totalFinal}\n`);
-  return totalFetched;
+
+  console.log(
+    `✅ Bloco concluído | novos: ${fetched} | duplicados removidos: ${duplicatesRemoved} | total: ${totalFinal}`
+  );
+
+  return fetched;
 }
 
-/* ================== Loop mês a mês (descendo) ================== */
+/* ================== LOOP PRINCIPAL ================== */
 async function run() {
   let upper = new Date(startTop);
   let months = 0;
-  let grandTotal = 0;
+  let total = 0;
 
   while (upper > stopBottom && months < MAX_MONTHS) {
     const lower = minusOneMonth(upper);
     const effectiveLower = lower > stopBottom ? lower : stopBottom;
 
     const fetched = await fetchMonthBlock(upper, effectiveLower);
-    grandTotal += fetched;
+    total += fetched;
 
     upper = effectiveLower;
     months++;
-
-    if (fetched === 0 && upper <= stopBottom) break;
   }
 
-  console.log(`\n🎉 Extração finalizada.`);
-  console.log(`📦 Total de tickets retornados pela API nesta execução: ${grandTotal}`);
+  console.log(`🎉 Extração finalizada | Total retornado pela API: ${total}`);
 }
 
-run().catch((err) => console.error("❌ Falha geral na execução:", err));
+run().catch((err) =>
+  console.error("❌ Falha geral na execução:", err)
+);

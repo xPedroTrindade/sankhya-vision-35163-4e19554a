@@ -1,0 +1,32 @@
+[
+  {
+    "id": 2307,
+    "link_ticket": "https://sankhyaindaiatuba.freshdesk.com/support/tickets/2307",
+    "assunto": "Entrada de nota de importação",
+    "descricao": "Boa tarde. Precido de suporte para padronização dentro sankhya para entrada da primeira nota de importação da empresa.",
+    "status": 3,
+    "prioridade": 4,
+    "tipo": "Suporte Técnico",
+    "empresa_id": 73001386639,
+    "requester_id": 73070078147,
+    "nome_solicitante": "Laisa Maria Custodio",
+    "email_solicitante": "administrativo@jkchigiene.com.br",
+    "created_at": "2025-11-28T19:40:33Z",
+    "updated_at": "2025-12-11T20:34:46Z",
+    "due_by": "2025-11-28T23:52:26Z",
+    "is_escalated": false,
+    "tags": [
+      "Pendente Cliente"
+    ],
+    "group_id": null,
+    "modulo": "Compras",
+    "processo": "TOP - Tipos de Operação",
+    "personalizacao": null,
+    "custom_fields": {
+      "cf_mdulo": "Compras",
+      "cf_processo": null,
+      "cf_processo6582": "TOP - Tipos de Operação",
+      "cf_personalizao": null
+    }
+  }
+]

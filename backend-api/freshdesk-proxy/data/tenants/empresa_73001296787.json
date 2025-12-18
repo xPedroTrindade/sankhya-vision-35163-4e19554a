@@ -1,0 +1,210 @@
+[
+  {
+    "id": 1748,
+    "link_ticket": "https://sankhyaindaiatuba.freshdesk.com/support/tickets/1748",
+    "assunto": "Reserva de estoque na segunda fase",
+    "descricao": "ORDEM DE PRODUÇÃO 401 - TEM 2 FASES A PRIMEIRA FASE TEM MAIS ITENS E FOI FINALIZADO, PORÉM A SEGUNDA FASE NÃO CONSIGO FINALIZAR E APARECE UM ERRO COM ESTOQUE INSUFICIENTE DOS PRODUTOS DA PRIMEIRA FASE. PRECISO DAR BAIXA NESSA OP O MAIS RAPIDO POSSÍVEL.",
+    "status": 5,
+    "prioridade": 4,
+    "tipo": "Suporte Técnico",
+    "empresa_id": 73001296787,
+    "requester_id": 73063648771,
+    "nome_solicitante": null,
+    "email_solicitante": null,
+    "created_at": "2025-05-08T17:11:08Z",
+    "updated_at": "2025-05-09T14:37:04Z",
+    "due_by": "2025-05-08T21:11:08Z",
+    "is_escalated": true,
+    "tags": [
+      "Pendente Cliente"
+    ],
+    "group_id": null,
+    "modulo": null,
+    "processo": "ORDEM DE PRODUÇÃO 401 - ESTOQUE INSUFICIENTE",
+    "personalizacao": null,
+    "custom_fields": {
+      "cf_mdulo": null,
+      "cf_processo": "ORDEM DE PRODUÇÃO 401 - ESTOQUE INSUFICIENTE",
+      "cf_processo6582": null,
+      "cf_personalizao": null
+    }
+  },
+  {
+    "id": 1744,
+    "link_ticket": "https://sankhyaindaiatuba.freshdesk.com/support/tickets/1744",
+    "assunto": "Erro ao emitir Danfe ao PE",
+    "descricao": "Preciso emitir uma Danfe para Petrolina/PE, porém aparece o erro: O valor do campo pICMSUFDest (Alíquota adotada nas operações internas na UF do destinatário para o produto / mercadoria.) informado não é valido. e o valor do Difal está muito acima do normal. Status da NF-e : Erro de validação, Numero da Nota 3166",
+    "status": 5,
+    "prioridade": 3,
+    "tipo": "Suporte Técnico",
+    "empresa_id": 73001296787,
+    "requester_id": 73063648771,
+    "nome_solicitante": null,
+    "email_solicitante": null,
+    "created_at": "2025-05-06T12:39:11Z",
+    "updated_at": "2025-05-12T14:06:28Z",
+    "due_by": "2025-05-07T00:39:12Z",
+    "is_escalated": true,
+    "tags": [
+      "Pendente Cliente"
+    ],
+    "group_id": null,
+    "modulo": null,
+    "processo": "Erro de validação, Numero da Nota 3166",
+    "personalizacao": null,
+    "custom_fields": {
+      "cf_mdulo": null,
+      "cf_processo": "Erro de validação, Numero da Nota 3166",
+      "cf_processo6582": null,
+      "cf_personalizao": null
+    }
+  },
+  {
+    "id": 1739,
+    "link_ticket": "https://sankhyaindaiatuba.freshdesk.com/support/tickets/1739",
+    "assunto": "Dashboard Faturamento e Lucratividade",
+    "descricao": "Olá, Os quadros Faturamento e Lucratividade não funcionam no meu Painel. Segue evidencia",
+    "status": 5,
+    "prioridade": 3,
+    "tipo": "Suporte Técnico",
+    "empresa_id": 73001296787,
+    "requester_id": 73063213098,
+    "nome_solicitante": null,
+    "email_solicitante": null,
+    "created_at": "2025-04-28T22:10:42Z",
+    "updated_at": "2025-05-14T13:14:29Z",
+    "due_by": "2025-04-29T10:10:42Z",
+    "is_escalated": true,
+    "tags": [
+      "Pendente Sankhya"
+    ],
+    "group_id": null,
+    "modulo": null,
+    "processo": "Admisnistrativo",
+    "personalizacao": null,
+    "custom_fields": {
+      "cf_mdulo": null,
+      "cf_processo": "Admisnistrativo",
+      "cf_processo6582": null,
+      "cf_personalizao": null
+    }
+  },
+  {
+    "id": 1734,
+    "link_ticket": "https://sankhyaindaiatuba.freshdesk.com/support/tickets/1734",
+    "assunto": "CREDITO AO CLIENTE",
+    "descricao": "Bom dia, Solicito ajuda para entender por qual motivo não esta aparecendo o Poup-up de que existe um crédito já lançado para o faturamento no momento da emissao de nota fiscal. Não apareceu nenhuma vez e em nenhuma nota faturada. Seguindo as instruções do Yuri, foi Lançado como crédito ao cliente e vinculado ao mesmo. Fiz a baixa e a conciliação conforme ele me orientou que eu poderia já adiantar Não sei se falta algum comando ou se eu fiz alguma ação indevida. Deveria não ter baixado o credito e apenas concilia-lo para que possa aparecer? Aguardo auxilio Att",
+    "status": 4,
+    "prioridade": 2,
+    "tipo": "Suporte Técnico",
+    "empresa_id": 73001296787,
+    "requester_id": 73063412330,
+    "nome_solicitante": null,
+    "email_solicitante": null,
+    "created_at": "2025-04-28T12:30:45Z",
+    "updated_at": "2025-04-28T14:31:11Z",
+    "due_by": "2025-04-29T13:23:43Z",
+    "is_escalated": false,
+    "tags": [
+      "Pendente Cliente"
+    ],
+    "group_id": null,
+    "modulo": null,
+    "processo": "Financeiro",
+    "personalizacao": null,
+    "custom_fields": {
+      "cf_mdulo": null,
+      "cf_processo": "Financeiro",
+      "cf_processo6582": null,
+      "cf_personalizao": null
+    }
+  },
+  {
+    "id": 1733,
+    "link_ticket": "https://sankhyaindaiatuba.freshdesk.com/support/tickets/1733",
+    "assunto": "Conta Corrente sumiu",
+    "descricao": "Bom dia, no dia da integração foi criada a conta corrente \"Caixa Contabil\" conforme solicitamos mas a mesma não aparece pra mim. Eu não havia visto pois não tinha precisado dela até o momento. Preciso da criação da mesma. Ela vai iniciar com o saldo zerado.",
+    "status": 4,
+    "prioridade": 2,
+    "tipo": "Suporte Técnico",
+    "empresa_id": 73001296787,
+    "requester_id": 73063412330,
+    "nome_solicitante": null,
+    "email_solicitante": null,
+    "created_at": "2025-04-28T12:26:45Z",
+    "updated_at": "2025-05-06T13:04:21Z",
+    "due_by": "2025-04-29T15:50:07Z",
+    "is_escalated": false,
+    "tags": [
+      "Pendente Cliente"
+    ],
+    "group_id": null,
+    "modulo": null,
+    "processo": "Financeiro",
+    "personalizacao": null,
+    "custom_fields": {
+      "cf_mdulo": null,
+      "cf_processo": "Financeiro",
+      "cf_processo6582": null,
+      "cf_personalizao": null
+    }
+  },
+  {
+    "id": 1730,
+    "link_ticket": "https://sankhyaindaiatuba.freshdesk.com/support/tickets/1730",
+    "assunto": "Cadastro de Novos Usuários ao Pedidos Web",
+    "descricao": "Solicito orientação para cadastro de 2 usuários para o Pedido Web. Fabio Coli Badini e-mail: comercial@sheltertintas.com.br Pytherson Rodrigues vendas@sheltertintas.com.br",
+    "status": 5,
+    "prioridade": 3,
+    "tipo": "Dúvidas",
+    "empresa_id": 73001296787,
+    "requester_id": 73063213098,
+    "nome_solicitante": null,
+    "email_solicitante": null,
+    "created_at": "2025-04-25T12:31:15Z",
+    "updated_at": "2025-05-06T11:51:09Z",
+    "due_by": "2025-04-26T00:31:15Z",
+    "is_escalated": true,
+    "tags": [],
+    "group_id": null,
+    "modulo": null,
+    "processo": "Cadastro de Usuários",
+    "personalizacao": null,
+    "custom_fields": {
+      "cf_mdulo": null,
+      "cf_processo": "Cadastro de Usuários",
+      "cf_processo6582": null,
+      "cf_personalizao": null
+    }
+  },
+  {
+    "id": 1725,
+    "link_ticket": "https://sankhyaindaiatuba.freshdesk.com/support/tickets/1725",
+    "assunto": "Emissão de OP sem Estoque de MP",
+    "descricao": "Conforme relatado hoje com Raphael, necessitamos de alteração no processo de emissão de OP. (Ordem de Produção) Hoje o sistema bloqueia a emissão da OP em caso de falta de Matéria Prima, necessitamos que seja liberado a criação da OP porem bloquear apenas o inicio da produção sem a Matéria Prima. Exemplo: Emitir OP sem Matéria Prima - OK / Iniciar a produção da OP sem Matéria Prima - Não",
+    "status": 5,
+    "prioridade": 3,
+    "tipo": "Personalização / Desenvolvimento",
+    "empresa_id": 73001296787,
+    "requester_id": 73063213098,
+    "nome_solicitante": null,
+    "email_solicitante": null,
+    "created_at": "2025-04-23T15:47:57Z",
+    "updated_at": "2025-04-25T13:46:17Z",
+    "due_by": "2025-04-26T00:57:40Z",
+    "is_escalated": false,
+    "tags": [
+      "Pendente Cliente"
+    ],
+    "group_id": null,
+    "modulo": null,
+    "processo": "Produção",
+    "personalizacao": null,
+    "custom_fields": {
+      "cf_mdulo": null,
+      "cf_processo": "Produção",
+      "cf_processo6582": null,
+      "cf_personalizao": null
+    }
+  }
+]

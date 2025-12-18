@@ -15,12 +15,37 @@
 
 import fs from "fs";
 import path from "path";
+import { fileURLToPath } from "url";
 
-const TICKETS_FILE    = "./data/processed/tickets_simplificado.json";
-const COMPANIES_FILE  = "./data/processed/companies.json";
-const REQUESTERS_FILE = "./data/cache/requesters_cache.json";
-const OUTPUT_DIR      = "./data/processed";
-const OUTPUT_FILE     = path.join(OUTPUT_DIR, "company_and_requesters.json");
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// estamos em src/core → subir dois níveis até freshdesk-proxy
+const PROJECT_ROOT = path.resolve(__dirname, "../../");
+
+const TICKETS_FILE = path.join(
+  PROJECT_ROOT,
+  "data",
+  "processed",
+  "tickets_simplificado.json"
+);
+
+const COMPANIES_FILE = path.join(
+  PROJECT_ROOT,
+  "data",
+  "processed",
+  "companies.json"
+);
+
+const CACHE_DIR = path.join(PROJECT_ROOT, "data", "cache");
+const REQUESTERS_FILE = path.join(CACHE_DIR, "requesters_cache.json");
+
+const OUTPUT_DIR = path.join(PROJECT_ROOT, "data", "processed");
+const OUTPUT_FILE = path.join(OUTPUT_DIR, "company_and_requesters.json");
+
+// garante pastas
+fs.mkdirSync(CACHE_DIR, { recursive: true });
+fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 
 /* ============ Helpers ============ */
 function loadJson(p) {

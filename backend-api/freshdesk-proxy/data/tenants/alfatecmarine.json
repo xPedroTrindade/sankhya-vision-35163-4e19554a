@@ -1,0 +1,88 @@
+[
+  {
+    "id": 2306,
+    "link_ticket": "https://sankhyaindaiatuba.freshdesk.com/support/tickets/2306",
+    "assunto": "resolver problema de envio de e-mail da empresa dois na tele de OS",
+    "descricao": "o evento de disparar e-mail, de acordo com os status da os não esta funcionando quando eu escolho a empresa 2 DRW, não dispara o email, mas quando eu uso a empresa 1 AMB dispara normalmente, preciso que quando eu selecione a empresa dois na tela de ordem de serviço disper e-mail igual a empresa 1",
+    "status": 5,
+    "prioridade": 4,
+    "tipo": "Personalização / Desenvolvimento",
+    "empresa_id": 73001299912,
+    "requester_id": 73064982045,
+    "nome_solicitante": "Operations",
+    "email_solicitante": "operations@alfatecmarine.com.br",
+    "created_at": "2025-11-28T18:45:55Z",
+    "updated_at": "2025-11-28T19:36:03Z",
+    "due_by": "2025-11-28T22:45:55Z",
+    "is_escalated": false,
+    "tags": [],
+    "group_id": null,
+    "modulo": "Serviços",
+    "processo": "Personalização",
+    "personalizacao": "Ajuste",
+    "custom_fields": {
+      "cf_mdulo": "Serviços",
+      "cf_processo": null,
+      "cf_processo6582": "Personalização",
+      "cf_personalizao": "Ajuste"
+    }
+  },
+  {
+    "id": 2095,
+    "link_ticket": "https://sankhyaindaiatuba.freshdesk.com/support/tickets/2095",
+    "assunto": "fiscal",
+    "descricao": "alterar controle de numeração",
+    "status": 5,
+    "prioridade": 3,
+    "tipo": "Suporte Técnico",
+    "empresa_id": 73001299912,
+    "requester_id": 73064982045,
+    "nome_solicitante": "Operations",
+    "email_solicitante": "operations@alfatecmarine.com.br",
+    "created_at": "2025-09-30T18:30:21Z",
+    "updated_at": "2025-10-06T19:02:11Z",
+    "due_by": "2025-10-01T06:30:21Z",
+    "is_escalated": true,
+    "tags": [
+      "Pendente Cliente"
+    ],
+    "group_id": null,
+    "modulo": null,
+    "processo": "Fiscal",
+    "personalizacao": null,
+    "custom_fields": {
+      "cf_mdulo": null,
+      "cf_processo": "Fiscal",
+      "cf_processo6582": null,
+      "cf_personalizao": null
+    }
+  },
+  {
+    "id": 1789,
+    "link_ticket": "https://sankhyaindaiatuba.freshdesk.com/support/tickets/1789",
+    "assunto": "Problemeas com envio de E-mail na troca de status da OS",
+    "descricao": "Ao trocar para o Status para Solicitação na tela de Ordem de Serviço, ao fazer a ação de salvar ele retorna um erro",
+    "status": 4,
+    "prioridade": 2,
+    "tipo": "Suporte Técnico",
+    "empresa_id": 73001299912,
+    "requester_id": 73064982045,
+    "nome_solicitante": "Operations",
+    "email_solicitante": "operations@alfatecmarine.com.br",
+    "created_at": "2025-06-17T19:33:33Z",
+    "updated_at": "2025-06-17T19:36:25Z",
+    "due_by": "2025-06-18T19:33:33Z",
+    "is_escalated": false,
+    "tags": [],
+    "group_id": null,
+    "modulo": null,
+    "processo": "Ordem de Serviço",
+    "personalizacao": null,
+    "custom_fields": {
+      "cf_mdulo": null,
+      "cf_processo": "Ordem de Serviço",
+      "cf_processo6582": null,
+      "cf_personalizao": null
+    }
+  }
+]

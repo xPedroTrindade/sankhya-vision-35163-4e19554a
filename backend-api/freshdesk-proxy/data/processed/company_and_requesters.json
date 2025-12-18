@@ -1,0 +1,763 @@
+{
+  "Abril": {
+    "ids_unificados": [
+      "73001334659"
+    ],
+    "nomes_empresas": [
+      "Abril"
+    ],
+    "requesters": [
+      {
+        "name": "ANA PAULA RODRIGUES CID",
+        "email": "anap.rodrigues@abril.com.br"
+      },
+      {
+        "name": "Lillian Rodrigues de Oliveira",
+        "email": "lillian.rodrigues@abril.com.br"
+      },
+      {
+        "name": "Valéria Ferreira Alves",
+        "email": "valeria.alves@abril.com.br"
+      },
+      {
+        "name": "VIVIANE ADRIANA DA PAZ PONTES",
+        "email": "viviane.paz@abril.com.br"
+      }
+    ]
+  },
+  "Agrof": {
+    "ids_unificados": [
+      "73000980874"
+    ],
+    "nomes_empresas": [
+      "Agrof"
+    ],
+    "requesters": [
+      {
+        "name": "diogo. araujo@agrof. com. br",
+        "email": "diogo.araujo@agrof.com.br"
+      },
+      {
+        "name": "Rafael Mesquita",
+        "email": "rafael@agrof.com.br"
+      }
+    ]
+  },
+  "Alfatecmarine": {
+    "ids_unificados": [
+      "73001299912"
+    ],
+    "nomes_empresas": [
+      "Alfatecmarine"
+    ],
+    "requesters": [
+      {
+        "name": "Operations",
+        "email": "operations@alfatecmarine.com.br"
+      }
+    ]
+  },
+  "Audacci": {
+    "ids_unificados": [
+      "73001233085",
+      "73001139522",
+      "73001233006"
+    ],
+    "nomes_empresas": [
+      "Audacci",
+      "Audacci",
+      "Audacci"
+    ],
+    "requesters": [
+      {
+        "name": "Enzo Cadorim",
+        "email": "enzo.cadorim@gmail.com"
+      },
+      {
+        "name": "Enzo Rafael Cadorim Cintra",
+        "email": "almoxarifado01@audacci.com"
+      },
+      {
+        "name": "Fábio",
+        "email": "joao.lima@audacci.com"
+      },
+      {
+        "name": "Genivaldo Alves Ferreira",
+        "email": "genivaldo.ferreira@audacci.com"
+      },
+      {
+        "name": "Genivaldo Ferreira",
+        "email": "genivaldo@audacci.com"
+      },
+      {
+        "name": "Ivanete",
+        "email": "ivanete.diniz@audacci.com"
+      },
+      {
+        "name": "Jhonattas Felipe de Oliveira Costa",
+        "email": "jhonattas.costa@audacci.com"
+      },
+      {
+        "name": "María de Lourdes Gomes Faria",
+        "email": "malu.faria@audacci.com"
+      },
+      {
+        "name": "Maria Elisa S dos Santos",
+        "email": "financeiro@audacci.com"
+      }
+    ]
+  },
+  "Avantiquimica": {
+    "ids_unificados": [
+      "73001139512"
+    ],
+    "nomes_empresas": [
+      "Avantiquimica"
+    ],
+    "requesters": [
+      {
+        "name": "Assistente Comercial",
+        "email": "nfe@avantiquimica.net"
+      },
+      {
+        "name": "Daniela Grimaldi Souza",
+        "email": "compras@avantiquimica.net"
+      },
+      {
+        "name": "Ernesto Sartor",
+        "email": "ernesto@fusv.com.br"
+      },
+      {
+        "name": "Gustavo Sgarbi",
+        "email": "gustavo.rgj@gmail.com"
+      },
+      {
+        "name": "JOSÉ VALQUIMAR DA SILVA LIMA",
+        "email": "contabilidade@fusv.com.br"
+      },
+      {
+        "name": "Juliana Sgarbi",
+        "email": "juliana.rgj@gmail.com"
+      }
+    ]
+  },
+  "Bettasuplementos": {
+    "ids_unificados": [
+      "73001240421",
+      "73001240584",
+      "73001240420"
+    ],
+    "nomes_empresas": [
+      "Bettasuplementos",
+      "Dafabricasuplementos",
+      "Bettasuplementos"
+    ],
+    "requesters": [
+      {
+        "name": "João Antonio dos Santos",
+        "email": "auditoria@bettasuplementos.com.br"
+      },
+      {
+        "name": "Johny Rodrigues Betta",
+        "email": "administrativo@bettasuplementos.com.br"
+      },
+      {
+        "name": "LEONARDO AUGUSTO DE OLIVEIRA",
+        "email": "leonardo.oliveira@bettasuplementos.com.br"
+      },
+      {
+        "name": "Luiz Guilherme Euphrasio Mendonça",
+        "email": "luiz.guilherme@dafabricasuplementos.com.br"
+      },
+      {
+        "name": "mayko richard",
+        "email": "mayko@dafabricasuplementos.com.br"
+      },
+      {
+        "name": "Vitoria Jociele da Silva",
+        "email": "financeiro@bettasuplementos.com.br"
+      },
+      {
+        "name": "Wellinton Gotardo",
+        "email": "wellinton.gotardo@bettasuplementos.com.br"
+      }
+    ]
+  },
+  "Brasilparalelo": {
+    "ids_unificados": [
+      "73001378510"
+    ],
+    "nomes_empresas": [
+      "Brasilparalelo"
+    ],
+    "requesters": [
+      {
+        "name": "Carolina Fambrini Sousa",
+        "email": "carolina.sousa@brasilparalelo.com.br"
+      },
+      {
+        "name": "Samuel Antonio Braz",
+        "email": "samuel.braz@brasilparalelo.com.br"
+      }
+    ]
+  },
+  "Casadopapelembalagens": {
+    "ids_unificados": [
+      "73001292445"
+    ],
+    "nomes_empresas": [
+      "Casadopapelembalagens"
+    ],
+    "requesters": [
+      {
+        "name": "Alessandra Ribeiro",
+        "email": "alessandra@casadopapelembalagens.com.br"
+      },
+      {
+        "name": "ALINE FERREIRA PINHEIRO",
+        "email": "compras.aux@casadopapelembalagens.com.br"
+      },
+      {
+        "name": "Audrey Borges",
+        "email": "gerencia.filial@casadopapelembalagens.com.br"
+      },
+      {
+        "name": "Dayane santos",
+        "email": "compras02@casadopapelembalagens.com.br"
+      },
+      {
+        "name": "Giovanna Teruel",
+        "email": "giovanna@casadopapelembalagens.com.br"
+      },
+      {
+        "name": "Luiz Carlos Dos Santos Junior",
+        "email": "gerencia.matriz@casadopapelembalagens.com.br"
+      },
+      {
+        "name": "Mariana Favaro",
+        "email": "cobranca2@casadopapelembalagens.com.br"
+      },
+      {
+        "name": "Mariza Helena Melo de Oliveira",
+        "email": "marizaouroverde@casadopapelembalagens.com.br"
+      },
+      {
+        "name": "Milena Rodrigues Mendes",
+        "email": "cobranca@casadopapelembalagens.com.br"
+      },
+      {
+        "name": "Rafael Lardo de Souza",
+        "email": "rafael@casadopapelembalagens.com.br"
+      },
+      {
+        "name": "Ricardo Santos",
+        "email": "analise@casadopapelembalagens.com.br"
+      },
+      {
+        "name": "Thaíssa G. Guimarães",
+        "email": "cobranca3@casadopapelembalagens.com.br"
+      }
+    ]
+  },
+  "Danpack": {
+    "ids_unificados": [
+      "73001230049"
+    ],
+    "nomes_empresas": [
+      "Danpack"
+    ],
+    "requesters": [
+      {
+        "name": "Danilo",
+        "email": "danilo@danpack.com.br"
+      },
+      {
+        "name": "Rafael Rocha",
+        "email": "compras01@danpack.com.br"
+      }
+    ]
+  },
+  "Dinoxx": {
+    "ids_unificados": [
+      "73001288765"
+    ],
+    "nomes_empresas": [
+      "Dinoxx"
+    ],
+    "requesters": [
+      {
+        "name": "Beatriz Senciati Calegari",
+        "email": "beatriz.calegari@dinoxx.com.br"
+      },
+      {
+        "name": "Edvaine Nunes",
+        "email": "edvaine.nunes@dinoxx.com.br"
+      },
+      {
+        "name": "Elisabete Souza",
+        "email": "elisabete.souza@dinoxx.com.br"
+      },
+      {
+        "name": "Gislaine Batalha",
+        "email": "gislaine.batalha@dinoxx.com.br"
+      },
+      {
+        "name": "JEAN GUILHERME MARACHINI",
+        "email": "jean.marachini@dinoxx.com.br"
+      },
+      {
+        "name": "João Ferreira",
+        "email": "joao.ferreira@dinoxx.com.br"
+      },
+      {
+        "name": "Leonardo Causo Siqueira",
+        "email": "leonardo.causo@dinoxx.com.br"
+      },
+      {
+        "name": "Maria Gatti",
+        "email": "maria.gatti@dinoxx.com.br"
+      },
+      {
+        "name": "Thaisa Rodrigues",
+        "email": "thaisa.rodrigues@dinoxx.com.br"
+      }
+    ]
+  },
+  "empresa_73001296787": {
+    "ids_unificados": [
+      "73001296787"
+    ],
+    "nomes_empresas": [
+      "empresa_73001296787"
+    ],
+    "requesters": []
+  },
+  "Polivisor": {
+    "ids_unificados": [
+      "73001329495",
+      "73001188075"
+    ],
+    "nomes_empresas": [
+      "empresa_73001329495",
+      "Polivisor"
+    ],
+    "requesters": [
+      {
+        "name": "Lucas Pena Mantovani",
+        "email": "lucas.polivisor@gmail.com"
+      },
+      {
+        "name": "Lucas Pena Mantovani",
+        "email": "lucas@polivisor.com.br"
+      }
+    ]
+  },
+  "empresa_73001334444": {
+    "ids_unificados": [
+      "73001334444"
+    ],
+    "nomes_empresas": [
+      "empresa_73001334444"
+    ],
+    "requesters": [
+      {
+        "name": "Jussara Lemes",
+        "email": "jussaradsslemes@gmail.com"
+      },
+      {
+        "name": "Pedro Trindade",
+        "email": "pedrohtrindade2@gmail.com"
+      },
+      {
+        "name": "thiago teste",
+        "email": "sanchezzthiago2013@gmail.com"
+      }
+    ]
+  },
+  "Fiocamp": {
+    "ids_unificados": [
+      "73001139525"
+    ],
+    "nomes_empresas": [
+      "Fiocamp"
+    ],
+    "requesters": [
+      {
+        "name": "Lucas Marques",
+        "email": "lucas.marques@fiocamp.com.br"
+      }
+    ]
+  },
+  "Grupopomiglio": {
+    "ids_unificados": [
+      "73001166436"
+    ],
+    "nomes_empresas": [
+      "Grupopomiglio"
+    ],
+    "requesters": [
+      {
+        "name": "Vanessa Torres da Costa",
+        "email": "administracao@grupopomiglio.com"
+      },
+      {
+        "name": "Vanessa Torres da Costa",
+        "email": "vtorres@grupopomiglio.com"
+      }
+    ]
+  },
+  "Grupoquik": {
+    "ids_unificados": [
+      "73001334658"
+    ],
+    "nomes_empresas": [
+      "Grupoquik"
+    ],
+    "requesters": [
+      {
+        "name": "Cibele",
+        "email": "cibele@grupoquik.com.br"
+      },
+      {
+        "name": "Rafael",
+        "email": "rafael@grupoquik.com.br"
+      }
+    ]
+  },
+  "Hidrogas": {
+    "ids_unificados": [
+      "73001326488"
+    ],
+    "nomes_empresas": [
+      "Hidrogas"
+    ],
+    "requesters": [
+      {
+        "name": "MATHEUS DOS SANTOS SILVA",
+        "email": "matheus@hidrogas.net"
+      },
+      {
+        "name": "Nfe-hidrogas",
+        "email": "nfe-hidrogas@hidrogas.net"
+      }
+    ]
+  },
+  "Hst": {
+    "ids_unificados": [
+      "73001139517"
+    ],
+    "nomes_empresas": [
+      "Hst"
+    ],
+    "requesters": [
+      {
+        "name": "Camila Cherulli de Melo",
+        "email": "camila_dias@hst.com.br"
+      },
+      {
+        "name": "hstnf",
+        "email": "hstnf@hst.com.br"
+      },
+      {
+        "name": "Luciana Montagner Franquini Turatto",
+        "email": "financeiro@hst.com.br"
+      },
+      {
+        "name": "Tassiana Cristina da Silva",
+        "email": "tassiana_silva@hst.com.br"
+      }
+    ]
+  },
+  "Indlog": {
+    "ids_unificados": [
+      "73001316726"
+    ],
+    "nomes_empresas": [
+      "Indlog"
+    ],
+    "requesters": [
+      {
+        "name": "Daniel Indmed",
+        "email": "empenhos@indmed.com.br"
+      },
+      {
+        "name": "Liara Petroni",
+        "email": "empenhos@mkmhospitalar.com.br"
+      },
+      {
+        "name": "Vanessa Tatiana Magalhães Flauzino",
+        "email": "farmaceutico@indlog.com.br"
+      },
+      {
+        "name": "Vera Lucia Soto",
+        "email": "financeiro@indmed.com.br"
+      }
+    ]
+  },
+  "Injectpoli": {
+    "ids_unificados": [
+      "73001139526"
+    ],
+    "nomes_empresas": [
+      "Injectpoli"
+    ],
+    "requesters": [
+      {
+        "name": "Eliane Costalonga Ferragutte",
+        "email": "eliane@injectpoli.com.br"
+      },
+      {
+        "name": "Patricia Serafim",
+        "email": "patricia@injectpoli.com.br"
+      },
+      {
+        "name": "Ricardo Ferragut",
+        "email": "ricardo@injectpoli.com.br"
+      },
+      {
+        "name": "simone macario",
+        "email": "producao1@injectpoli.com.br"
+      },
+      {
+        "name": "Vinicio Marota de Oliveira",
+        "email": "qualidade@injectpoli.com.br"
+      },
+      {
+        "name": "Vitória Messias",
+        "email": "compras@injectpoli.com.br"
+      },
+      {
+        "name": "Warner",
+        "email": "estoque@injectpoli.com.br"
+      }
+    ]
+  },
+  "Jkchigiene": {
+    "ids_unificados": [
+      "73001386639"
+    ],
+    "nomes_empresas": [
+      "Jkchigiene"
+    ],
+    "requesters": [
+      {
+        "name": "Laisa Maria Custodio",
+        "email": "administrativo@jkchigiene.com.br"
+      }
+    ]
+  },
+  "Jkglobal": {
+    "ids_unificados": [
+      "73001287191"
+    ],
+    "nomes_empresas": [
+      "Jkglobal"
+    ],
+    "requesters": [
+      {
+        "name": "Andreia",
+        "email": "financeiro@jkglobal.com.br"
+      },
+      {
+        "name": "Daniel Yuuki",
+        "email": "qualidade@jkglobal.com.br"
+      },
+      {
+        "name": "Fernando Muniz De Oliveira",
+        "email": "almoxarifado@jkglobal.com.br"
+      },
+      {
+        "name": "Juliana",
+        "email": "industrial@jkglobal.com.br"
+      },
+      {
+        "name": "Juliano",
+        "email": "operacoes@jkglobal.com.br"
+      },
+      {
+        "name": "Matheus",
+        "email": "producao@jkglobal.com.br"
+      },
+      {
+        "name": "Patrícia",
+        "email": "comercial1@jkglobal.com.br"
+      },
+      {
+        "name": "Rafaela Bileski",
+        "email": "compras@jkglobal.com.br"
+      }
+    ]
+  },
+  "Kitoplastic": {
+    "ids_unificados": [
+      "73001139527"
+    ],
+    "nomes_empresas": [
+      "Kitoplastic"
+    ],
+    "requesters": [
+      {
+        "name": "Bruno",
+        "email": "suporte@kitoplastic.com.br"
+      },
+      {
+        "name": "Clecio Lucena",
+        "email": "clecio.lucena@kitoplastic.com.br"
+      },
+      {
+        "name": "Guilherme Freire",
+        "email": "guilherme.freire@kitoplastic.com.br"
+      }
+    ]
+  },
+  "Metalfujii": {
+    "ids_unificados": [
+      "73001139529"
+    ],
+    "nomes_empresas": [
+      "Metalfujii"
+    ],
+    "requesters": [
+      {
+        "name": "Fabrício Corrêa",
+        "email": "fabricio.ti@metalfujii.com.br"
+      },
+      {
+        "name": "Kauan",
+        "email": "kauan@metalfujii.com.br"
+      },
+      {
+        "name": "Marcio",
+        "email": "marcio@metalfujii.com.br"
+      },
+      {
+        "name": "Marcio",
+        "email": "marcio@fujii.com.br"
+      }
+    ]
+  },
+  "Ndbombas": {
+    "ids_unificados": [
+      "73001329248"
+    ],
+    "nomes_empresas": [
+      "Ndbombas"
+    ],
+    "requesters": [
+      {
+        "name": "Alberto Barbosa Filho",
+        "email": "ti@ndbombas.com.br"
+      },
+      {
+        "name": "isaias da silva",
+        "email": "ti1@ndbombas.com.br"
+      },
+      {
+        "name": "JULIA MOURA",
+        "email": "adm@ndbombas.com.br"
+      }
+    ]
+  },
+  "Projetarind": {
+    "ids_unificados": [
+      "73001139520"
+    ],
+    "nomes_empresas": [
+      "Projetarind"
+    ],
+    "requesters": [
+      {
+        "name": "Bruno Vale",
+        "email": "bruno.vale@projetarind.com"
+      },
+      {
+        "name": "Edipo Trevisan",
+        "email": "edipo.trevisan@projetarind.com"
+      },
+      {
+        "name": "Jaqueline Santo",
+        "email": "jaqueline.santo@projetarind.com"
+      }
+    ]
+  },
+  "Tecnicadefluidos": {
+    "ids_unificados": [
+      "73001378842"
+    ],
+    "nomes_empresas": [
+      "Tecnicadefluidos"
+    ],
+    "requesters": [
+      {
+        "name": "Renan Honda de Oliveira",
+        "email": "renan.honda@tecnicadefluidos.com"
+      }
+    ]
+  },
+  "Turbimaq": {
+    "ids_unificados": [
+      "73001323240"
+    ],
+    "nomes_empresas": [
+      "Turbimaq"
+    ],
+    "requesters": [
+      {
+        "name": "Elder Funes",
+        "email": "informatica@turbimaq.com.br"
+      }
+    ]
+  },
+  "Unitcold": {
+    "ids_unificados": [
+      "73001232368"
+    ],
+    "nomes_empresas": [
+      "Unitcold"
+    ],
+    "requesters": [
+      {
+        "name": "Ana Letícia de Oliveira Castro",
+        "email": "ana.castro@unitcold.com.br"
+      },
+      {
+        "name": "jéssica censon",
+        "email": "jessica.censon@unitcold.com.br"
+      },
+      {
+        "name": "Matheus Sant' Ana Ferreira",
+        "email": "matheus.ferreira@unitcold.com.br"
+      }
+    ]
+  },
+  "Wareline": {
+    "ids_unificados": [
+      "73001139515"
+    ],
+    "nomes_empresas": [
+      "Wareline"
+    ],
+    "requesters": [
+      {
+        "name": "Aline Eloy",
+        "email": "alineeloy@wareline.com.br"
+      },
+      {
+        "name": "Andrea Pereira da Silva",
+        "email": "andreapereira@wareline.com.br"
+      },
+      {
+        "name": "Andrea Pereira da Silva",
+        "email": "financeiro@wareline.com.br"
+      },
+      {
+        "name": "Marcos Vieira",
+        "email": "marcosvieira@wareline.com.br"
+      },
+      {
+        "name": "Nathalia Mattos Giuvanelli",
+        "email": "nathaliaaraujo@wareline.com.br"
+      }
+    ]
+  }
+}

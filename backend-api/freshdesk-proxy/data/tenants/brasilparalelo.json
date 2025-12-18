@@ -1,0 +1,184 @@
+[
+  {
+    "id": 2321,
+    "link_ticket": "https://sankhyaindaiatuba.freshdesk.com/support/tickets/2321",
+    "assunto": "Geração EFD Contribuiçoes",
+    "descricao": "Bom dia Ao tentar gerar o SPED Contribuições de 10/2025 apareceu o erro em anexo. Tela usada: EFD Contribuições PIS/COFINS (nova tela) Fiz a geração pela tela antiga e funcionou normalmente.",
+    "status": 4,
+    "prioridade": 4,
+    "tipo": "Suporte Técnico",
+    "empresa_id": 73001378510,
+    "requester_id": 73070159737,
+    "nome_solicitante": "Carolina Fambrini Sousa",
+    "email_solicitante": "carolina.sousa@brasilparalelo.com.br",
+    "created_at": "2025-12-03T15:09:04Z",
+    "updated_at": "2025-12-04T13:15:00Z",
+    "due_by": "2025-12-03T19:09:04Z",
+    "is_escalated": true,
+    "tags": [
+      "Marco Nunes"
+    ],
+    "group_id": null,
+    "modulo": "Fiscal",
+    "processo": "Geração de SPED Contribuições",
+    "personalizacao": null,
+    "custom_fields": {
+      "cf_mdulo": "Fiscal",
+      "cf_processo": null,
+      "cf_processo6582": "Geração de SPED Contribuições",
+      "cf_personalizao": null
+    }
+  },
+  {
+    "id": 2311,
+    "link_ticket": "https://sankhyaindaiatuba.freshdesk.com/support/tickets/2311",
+    "assunto": "Rejeição 318 em notas fiscais de serviço de exportação",
+    "descricao": "Bom dia, Temos algumas notas de serviço de exportação que precisam ser emitidas para o exterior, os campos obrigatórios já estão preenchidos, porém ao emitir informa a seguinte mensagem: código do erro: 318 - Mensagem: Campo Cidade/UF não preenchido (obrigatório para tomador com CNPJ). O parceiro está preenchido corretamente. Por gentileza poderiam verificar",
+    "status": 4,
+    "prioridade": 3,
+    "tipo": "Suporte Técnico",
+    "empresa_id": 73001378510,
+    "requester_id": 73070159737,
+    "nome_solicitante": "Carolina Fambrini Sousa",
+    "email_solicitante": "carolina.sousa@brasilparalelo.com.br",
+    "created_at": "2025-12-01T14:58:51Z",
+    "updated_at": "2025-12-04T15:07:14Z",
+    "due_by": "2025-12-02T02:58:51Z",
+    "is_escalated": true,
+    "tags": [
+      "Juliano Faria",
+      "Ticket Suporte"
+    ],
+    "group_id": null,
+    "modulo": "Fiscal",
+    "processo": "Emissão NFSe",
+    "personalizacao": null,
+    "custom_fields": {
+      "cf_mdulo": "Fiscal",
+      "cf_processo": null,
+      "cf_processo6582": "Emissão NFSe",
+      "cf_personalizao": null
+    }
+  },
+  {
+    "id": 2295,
+    "link_ticket": "https://sankhyaindaiatuba.freshdesk.com/support/tickets/2295",
+    "assunto": "Falta de Informação de ISS",
+    "descricao": "Prezados(a), boa tarde tudo bom? Possuímos algumas notas que há a retenção de ISS, como demonstrado abaixo Entretanto, há 3 lançamentos lançamentos que possui o mesmo lançamentos mas o ISS não fica demonstrado para nos no campo de financeiro: Nosso financeiro nos avisou que não há iss nos lançamento para pagamento oq devemos fazer?",
+    "status": 5,
+    "prioridade": 3,
+    "tipo": "Suporte Técnico",
+    "empresa_id": 73001378510,
+    "requester_id": 73069945284,
+    "nome_solicitante": "Samuel Antonio Braz",
+    "email_solicitante": "samuel.braz@brasilparalelo.com.br",
+    "created_at": "2025-11-26T19:28:29Z",
+    "updated_at": "2025-11-28T17:21:55Z",
+    "due_by": "2025-11-27T07:28:29Z",
+    "is_escalated": true,
+    "tags": [],
+    "group_id": null,
+    "modulo": "Compras",
+    "processo": "Portal de Compras",
+    "personalizacao": null,
+    "custom_fields": {
+      "cf_mdulo": "Compras",
+      "cf_processo": null,
+      "cf_processo6582": "Portal de Compras",
+      "cf_personalizao": null
+    }
+  },
+  {
+    "id": 2294,
+    "link_ticket": "https://sankhyaindaiatuba.freshdesk.com/support/tickets/2294",
+    "assunto": "Nota de saída - Aguardando autorização",
+    "descricao": "Time, boa tarde tudo bom? Grato pela ultima resolução. Preciso de mais uma ajuda de vocês, temos alguns documentos que estão Aguardando autorização. Ao buscarmos a autorização, sou notificado do erro abaixo. O que é mais estanho é que a TOP utilizada aqui é a utilizada para todas saídas que acontecem dentro do Brasil. Gentilmente, poderia nos auxiliar a correção para que não aconteça mais?",
+    "status": 5,
+    "prioridade": 3,
+    "tipo": "Suporte Técnico",
+    "empresa_id": 73001378510,
+    "requester_id": 73069945284,
+    "nome_solicitante": "Samuel Antonio Braz",
+    "email_solicitante": "samuel.braz@brasilparalelo.com.br",
+    "created_at": "2025-11-26T19:17:06Z",
+    "updated_at": "2025-12-01T17:08:36Z",
+    "due_by": "2025-11-27T07:17:06Z",
+    "is_escalated": true,
+    "tags": [
+      "Em atendimento Pedro Trindade",
+      "Pendente Cliente"
+    ],
+    "group_id": null,
+    "modulo": "Vendas",
+    "processo": "Portal de Vendas",
+    "personalizacao": null,
+    "custom_fields": {
+      "cf_mdulo": "Vendas",
+      "cf_processo": null,
+      "cf_processo6582": "Portal de Vendas",
+      "cf_personalizao": null
+    }
+  },
+  {
+    "id": 2291,
+    "link_ticket": "https://sankhyaindaiatuba.freshdesk.com/support/tickets/2291",
+    "assunto": "Portal processamento de Notas Com erro",
+    "descricao": "Time, bom dia tudo bom? Na manhã de hoje entrei no portal - Processamento de NFSE e estou sendo notificado de um erro Gentilmente, aconteceu alguma coisa com o Sankhya ou temos data para resolução do problema?",
+    "status": 5,
+    "prioridade": 4,
+    "tipo": "Suporte Técnico",
+    "empresa_id": 73001378510,
+    "requester_id": 73069945284,
+    "nome_solicitante": "Samuel Antonio Braz",
+    "email_solicitante": "samuel.braz@brasilparalelo.com.br",
+    "created_at": "2025-11-26T13:21:53Z",
+    "updated_at": "2025-11-27T12:50:32Z",
+    "due_by": "2025-11-26T17:35:23Z",
+    "is_escalated": false,
+    "tags": [
+      "Em atendimento Pedro Trindade",
+      "Pendente Sankhya"
+    ],
+    "group_id": null,
+    "modulo": "Compras",
+    "processo": "Portal de Compras",
+    "personalizacao": null,
+    "custom_fields": {
+      "cf_mdulo": "Compras",
+      "cf_processo": null,
+      "cf_processo6582": "Portal de Compras",
+      "cf_personalizao": null
+    }
+  },
+  {
+    "id": 2283,
+    "link_ticket": "https://sankhyaindaiatuba.freshdesk.com/support/tickets/2283",
+    "assunto": "documentos de saídas",
+    "descricao": "Time, boa tarde tudo bom? Estamos realizando a emissão das notas de saídas da nossa empresa e estou entrando uma certa dificuldade em notas que são para as PF. Deixei no print abaixo a informação do parceiro - 964455 é uma venda que estamos realizando uma uma PF dentro do Estado de SP, o qual utilizaremos a CFOP 5101 CST 40. Por ser PF não há I.E para ele. O tipo de negociação será à vista e as contas contábeis já estão preenchidas. Ao solicitarmos a emissão da Nota Recebo o erro abaixo informando que a nota está em duplicidade que não seguirá com a emissão, perfeito. Ao consultar o status da Nota fiscal na opção abaixo mencionada. Está autorizada a emissão da Nota fiscal. Via regra geral ao fecharmos essa tela haveria uma segunda que iria aparecer e dar a opção se seguir com a emissão da nota, mas ao fechar a tela simplesmente não acontece nada. Gostaria de saber como proceder nesses casos, digo isso pelo fato de todas as notas a abaixo dessa mencionada estão com o mesmo erro.",
+    "status": 5,
+    "prioridade": 3,
+    "tipo": "Suporte Técnico",
+    "empresa_id": 73001378510,
+    "requester_id": 73069945284,
+    "nome_solicitante": "Samuel Antonio Braz",
+    "email_solicitante": "samuel.braz@brasilparalelo.com.br",
+    "created_at": "2025-11-24T17:31:02Z",
+    "updated_at": "2025-11-28T17:12:04Z",
+    "due_by": "2025-11-27T02:20:33Z",
+    "is_escalated": false,
+    "tags": [
+      "Juliano Faria",
+      "Pendente Cliente"
+    ],
+    "group_id": null,
+    "modulo": "Vendas",
+    "processo": "Portal de Vendas",
+    "personalizacao": null,
+    "custom_fields": {
+      "cf_mdulo": "Vendas",
+      "cf_processo": null,
+      "cf_processo6582": "Portal de Vendas",
+      "cf_personalizao": null
+    }
+  }
+]

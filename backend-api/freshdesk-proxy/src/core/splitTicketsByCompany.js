@@ -10,11 +10,38 @@
 
 import fs from "fs";
 import path from "path";
+import { fileURLToPath } from "url";
 
-const INPUT_TICKETS = "./data/processed/tickets_simplificado.json";
-const COMPANY_UNIFIED_FILE = "./data/processed/company_and_requesters.json";
-const COMPANIES_FILE = "./data/processed/companies.json";
-const OUTPUT_DIR = "./data/tenants/";
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// estamos em src/core → subir dois níveis até freshdesk-proxy
+const PROJECT_ROOT = path.resolve(__dirname, "../../");
+
+
+const INPUT_TICKETS = path.join(
+  PROJECT_ROOT,
+  "data",
+  "processed",
+  "tickets_simplificado.json"
+);
+
+const COMPANY_UNIFIED_FILE = path.join(
+  PROJECT_ROOT,
+  "data",
+  "processed",
+  "company_and_requesters.json"
+);
+
+const COMPANIES_FILE = path.join(
+  PROJECT_ROOT,
+  "data",
+  "processed",
+  "companies.json"
+);
+
+const OUTPUT_DIR = path.join(PROJECT_ROOT, "data", "tenants");
+
 
 /* ================== Helpers ================== */
 function sanitizeFilename(name) {
