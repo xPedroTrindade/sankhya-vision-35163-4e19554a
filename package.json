@@ -1,19 +1,26 @@
 {
   "name": "freshboard",
   "private": true,
+
   "workspaces": [
     "frontend/sankhya-vision-35163-10370",
     "backend-api/freshdesk-proxy"
   ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> f20d098 (corrigindo export)
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "build:dev": "vite build --mode development",
-    "preview": "vite preview"
+    "dev": "concurrently \"npm run dev --prefix frontend/sankhya-vision-35163-10370\" \"npm run start --prefix backend-api/freshdesk-proxy\"",
+    "frontend:dev": "npm run dev --prefix frontend/sankhya-vision-35163-10370",
+    "frontend:build": "npm run build --prefix frontend/sankhya-vision-35163-10370",
+    "frontend:preview": "npm run preview --prefix frontend/sankhya-vision-35163-10370",
+    "backend:start": "npm run start --prefix backend-api/freshdesk-proxy"
   },
   "devDependencies": {
     "concurrently": "^9.0.0"
   },
+
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
     "@radix-ui/react-accordion": "^1.2.12",

@@ -1,18 +1,25 @@
 {
-  "name": "freshboard-frontend",
+  "name": "freshboard",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+
+  "workspaces": [
+    "frontend/sankhya-vision-35163-10370",
+    "backend-api/freshdesk-proxy"
+  ],
+
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "build:dev": "vite build --mode development",
-    "preview": "vite preview"
+    "dev": "concurrently \"npm run dev --prefix frontend/sankhya-vision-35163-10370\" \"npm run start --prefix backend-api/freshdesk-proxy\"",
+    "frontend:dev": "npm run dev --prefix frontend/sankhya-vision-35163-10370",
+    "frontend:build": "npm run build --prefix frontend/sankhya-vision-35163-10370",
+    "frontend:preview": "npm run preview --prefix frontend/sankhya-vision-35163-10370",
+    "backend:start": "npm run start --prefix backend-api/freshdesk-proxy"
   },
-  "dependencies": {
-    "...": "mantém tudo como está"
-  },
+
   "devDependencies": {
-    "...": "mantém tudo como está, exceto lovable-tagger"
+    "concurrently": "^9.0.0"
+  },
+
+  "dependencies": {
+    "lovable-tagger": "^1.1.13"
   }
 }
