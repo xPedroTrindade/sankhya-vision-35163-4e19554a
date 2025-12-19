@@ -5,9 +5,14 @@
     "frontend/sankhya-vision-35163-10370",
     "backend-api/freshdesk-proxy"
   ],
+  
   "scripts": {
-    "dev": "concurrently \"npm run dev --prefix frontend/sankhya-vision-35163-10370\" \"npm run start --prefix backend-api/freshdesk-proxy\""
+    "dev": "vite",
+    "build": "vite build",
+    "build:dev": "vite build --mode development",
+    "preview": "vite preview"
   },
+
   "devDependencies": {
     "concurrently": "^9.0.0"
   },
