@@ -2,24 +2,15 @@
   "name": "freshboard",
   "private": true,
 
-  "workspaces": [
-    "frontend/sankhya-vision-35163-10370",
-    "backend-api/freshdesk-proxy"
-  ],
-
   "scripts": {
-    "dev": "concurrently \"npm run dev --prefix frontend/sankhya-vision-35163-10370\" \"npm run start --prefix backend-api/freshdesk-proxy\"",
-    "frontend:dev": "npm run dev --prefix frontend/sankhya-vision-35163-10370",
-    "frontend:build": "npm run build --prefix frontend/sankhya-vision-35163-10370",
-    "frontend:preview": "npm run preview --prefix frontend/sankhya-vision-35163-10370",
-    "backend:start": "npm run start --prefix backend-api/freshdesk-proxy"
+    "dev": "concurrently \"npm --prefix frontend/sankhya-vision-35163-10370 run dev\" \"npm --prefix backend-api/freshdesk-proxy run start\"",
+    "frontend:dev": "npm --prefix frontend/sankhya-vision-35163-10370 run dev",
+    "frontend:build": "npm --prefix frontend/sankhya-vision-35163-10370 run build",
+    "frontend:preview": "npm --prefix frontend/sankhya-vision-35163-10370 run preview",
+    "backend:start": "npm --prefix backend-api/freshdesk-proxy run start"
   },
 
   "devDependencies": {
     "concurrently": "^9.0.0"
-  },
-
-  "dependencies": {
-    "lovable-tagger": "^1.1.13"
   }
 }
